@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "runner": { "type": "http", "url": "https://mcp.runner.now/" }
+  }
+}

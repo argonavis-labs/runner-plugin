@@ -1,0 +1,15 @@
+{
+  "name": "runner",
+  "description": "The Runner plugin: connect your coding agent to your Runner orgs and Projects.",
+  "owner": {
+    "name": "Argo Navis Labs",
+    "url": "https://runner.now"
+  },
+  "plugins": [
+    {
+      "name": "runner",
+      "source": "./",
+      "description": "Runner for your coding agent: your orgs, your Projects, and the tools to work with them."
+    }
+  ]
+}
