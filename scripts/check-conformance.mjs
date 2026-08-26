@@ -9,7 +9,11 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const SERVER_URL = 'https://mcp.runner.now/'
+// No trailing slash: this is the spelling the rest of the product uses
+// (cfg.mcpPublicOrigin, and the `claude mcp add` command the first real
+// sign-in ran). Both spellings request path '/', so this is consistency, not
+// behavior — but one spelling means one string to grep for.
+export const SERVER_URL = 'https://mcp.runner.now'
 export const PLUGIN_NAME = 'runner'
 
 export function checkConformance(root) {

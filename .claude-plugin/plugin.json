@@ -1,8 +1,11 @@
 {
   "name": "runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Runner for your coding agent: your orgs, your Projects, and the tools to work with them.",
-  "author": { "name": "Argo Navis Labs", "url": "https://runner.now" },
+  "author": {
+    "name": "Argo Navis Labs",
+    "url": "https://runner.now"
+  },
   "homepage": "https://runner.now",
   "repository": "https://github.com/argonavis-labs/runner-plugin",
   "license": "MIT"

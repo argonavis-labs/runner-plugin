@@ -20,6 +20,8 @@ your browser on first use.
 codex plugin marketplace add argonavis-labs/runner-plugin
 ```
 
+Then install `runner` from the plugin browser (`codex /plugins`).
+
 **Any Agent Plugins 1.0 client** (Cursor, Copilot, Kiro, VS Code): point it at
 this repository. The standard layout (`plugin.json`, `mcp.json`, `skills/`)
 sits at the root.

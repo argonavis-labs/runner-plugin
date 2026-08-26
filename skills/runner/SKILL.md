@@ -12,7 +12,9 @@ Projects inside each.
    no org, because it is how you learn which org names exist.
 2. Every later Runner tool names one org. Never guess an org name; take it
    from `list_orgs`.
-3. If a call answers 401, the user's sign-in lapsed. Tell them to run the
-   client's MCP authentication step again; do not retry the call.
+3. If a call answers 401, ask the user to run the client's MCP
+   authentication step again; do not retry the call. Do not guess why: the
+   client also uses a 401 to start the very first sign-in, so a 401 does not
+   tell you the sign-in lapsed.
 4. An org the user joined in the last 30 seconds can be missing from
    `list_orgs`. If the user insists an org exists, call it again.

@@ -1,6 +1,9 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "runner": { "type": "streamable-http", "url": "https://mcp.runner.now/" }
+    "runner": {
+      "type": "streamable-http",
+      "url": "https://mcp.runner.now"
+    }
   }
 }
