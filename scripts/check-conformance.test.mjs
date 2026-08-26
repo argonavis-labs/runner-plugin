@@ -29,7 +29,9 @@ test('a version bumped in one manifest alone is caught', () => {
   const dir = copyRepo()
   const file = path.join(dir, 'plugin.json')
   const manifest = JSON.parse(fs.readFileSync(file, 'utf8'))
-  manifest.version = '1.0.1'
+  // Derived from the real version, never hardcoded: a literal here became the
+  // actual version on the first release and the mutation stopped mutating.
+  manifest.version = `${manifest.version}-drift`
   fs.writeFileSync(file, JSON.stringify(manifest))
   const problems = checkConformance(dir)
   assert.ok(problems.some((p) => p.includes('disagree on version')), problems.join('\n'))
