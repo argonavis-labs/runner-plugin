@@ -13,3 +13,12 @@ jobs:
           node-version: 22
       - run: node --test scripts/check-conformance.test.mjs
       - run: node scripts/check-conformance.mjs
+  codex-install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --global @openai/codex@0.154.0
+      - run: node --test scripts/codex-install.test.mjs
