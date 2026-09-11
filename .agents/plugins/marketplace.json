@@ -1,11 +1,12 @@
 {
+  "name": "runner",
   "plugins": [
     {
       "name": "runner",
       "description": "Runner for your coding agent: your orgs, your Projects, and the tools to work with them.",
-      "source": { "source": "path", "path": "./" },
-      "category": "productivity",
-      "policy": { "installation": "allowed", "authentication": "oauth" }
+      "source": { "source": "local", "path": "./" },
+      "category": "Productivity",
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" }
     }
   ]
 }

@@ -18,9 +18,13 @@ your browser on first use.
 
 ```
 codex plugin marketplace add argonavis-labs/runner-plugin
+codex plugin add runner@runner
+codex mcp login runner
 ```
 
-Then install `runner` from the plugin browser (`codex /plugins`).
+Complete the browser sign-in, then start a new Codex chat. Ask it to list your
+Runner organizations. You can also install `runner` from the plugin browser
+(`codex /plugins`) after you add the marketplace.
 
 **Any Agent Plugins 1.0 client** (Cursor, Copilot, Kiro, VS Code): point it at
 this repository. The standard layout (`plugin.json`, `mcp.json`, `skills/`)
